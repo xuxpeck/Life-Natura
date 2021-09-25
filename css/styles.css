@@ -1,0 +1,385 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+/*body*/
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* globar */
+img{
+    max-width: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+
+}
+h3{
+    font-size: 3rem;
+       
+}
+h4{
+    font-size: 2rem;
+
+}
+/** ultilidades **/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.fw-300{
+    font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+/* header*/
+.site-footer{
+
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0 3rem 0;
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contenido-header h1 {
+    color: rgb(43, 43, 43);
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+/** Navegacion **/
+.Navegacion a {
+    color: rgb(36, 36, 36);
+    text-decoration: rgb(10, 143, 252);
+    font-size: 1.8rem;
+    margin-right: 2rem;  
+}
+.Navegacion a:hover {
+    color: rgb(10, 143, 252);
+}
+.Navegacion a:last-of-type {
+    margin: 0;
+}
+/** iconos-nosotros **/
+.iconos-nosotros{
+    display: flex;
+}
+
+.icono{
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+.encabezado{
+    font-weight: 200;
+    text-align: center;
+}
+
+.titulo{
+    font-weight: 200;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cabezote{
+    font-weight: 300px;
+    text-align: center;
+    color: rgb(10, 143, 252);
+    /**margin-top: 3rem; **/
+}
+
+/** anuncios **/
+.contenedor-anuncios{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.anuncio{
+    margin-bottom: 50px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.3% - 1rem);
+    border-color: white;
+    border-width: 1px;
+    background-color: white;
+}
+.contenedor-anuncios{
+    padding: 2rem 4rem 2rem 4rem;
+}
+.contenedor-anuncios{
+    margin: 0%;
+}
+.contenido h3{
+    margin: 0%;
+}
+.contenido p3 {
+    margin: 0%;
+}
+.precio{
+    color: rgb(39, 28, 25);
+    font-weight: 500;
+}
+/* botones */
+
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    text-align-last: center;
+    margin-top: 5rem;
+
+}
+
+.boton-gris{
+    background-color: rgb(10, 143, 252);
+    display: block; 
+}
+.boton-verde{
+    background-color: rgb(10, 143, 252);
+    display: inline-block
+}
+.ver-todas{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+/** contacto **/
+.imagen-contacto{
+    background-image: url(../img/Untitled-1.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto{
+    flex: 1;
+    color: white;
+    font-size: 1.8rem;
+}
+/** seccion inferior **/
+.seccion-inferior{
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-inferior .blog{
+    flex-basis: 60%;
+}
+
+/** blog **/
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.entrada-blog{
+    margin-bottom: 0;
+}
+.seccion-inferior .blog {
+    flex-basis: 60%;
+}
+.seccion-inferior .reseñas {
+    flex-basis: calc(40% - 2rem);
+}
+
+.entrada-blog{
+    display: flex;
+    justify-content: space-between;
+}
+.entrada-blog .imagen{
+    flex-basis: 40%;
+}
+.entrada-blog .texto-entrada{
+    flex-basis: calc(60% - 3rem);
+}
+
+.texto-entrada h4{
+    margin: 0;
+    line-height: 1.4;
+}
+.texto-entrada a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.texto-entrada h4::after{
+    content: none;
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: rgb(10, 143, 252);
+    margin-top: 6px;
+}
+.texto-entrada span{
+    color: rgb(10, 143, 252);
+}
+
+/* reseñas */
+.reseña{
+    background-color: rgb(10, 123, 252);
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 2rem;
+}
+.reseña blockquote::before{
+    content: '';
+    background-image: url(../img/comilla.svg);
+    width: 4rem;
+    height: 4rem;
+} 
+.reseña blockquote{
+    position: relative;
+}
+/** footer **/
+.site-footer{
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.copyright{
+    margin: 0;
+}
+/** internas **/
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem 0 3rem 0;
+}
+.contenido-centrado{
+    max-width: 800px;
+}
+/**comprar boton**/
+.boton-comprar{
+    background-color: violet;
+    display: inline-block
+
+}
+.boton-comprar1{
+    background-color: black;
+    display: inline-block;
+}
+.boton-comprar2{
+    background-color: rgb(0, 195, 255);
+    display: inline-block;
+}
+.boton-comprar3{
+    background-color: green;
+    display: inline-block;
+}
+.boton-mochila{
+    background-color: rgb(209, 12, 94);
+    display: inline-block;
+}
+.boton-chaqueta{
+    background-color: black;
+    display: inline-block;
+}
+.boton-xbox{
+    background-color: green;
+    display: inline-block;
+}
+.boton-dama{
+    background-color: rgb(211, 157, 106);
+    display: inline-block;
+}
+/** contacto **/
+
+label{
+    display: block;
+}
+
+.contacto p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+legend {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin: 0;
+}
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+textarea {
+    height: 20rem;
+}
+.forma-contacto {
+    max-width:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.soporte{
+    font-size: 3.4rem;
+    color: rgb(10, 143, 252);
+}
+.descripcion-2{
+    color: black;
+}
+.texto-color{
+    display: CENTER;
+    padding: 5rem;
+    color: rgb(10, 143, 252);
+}
